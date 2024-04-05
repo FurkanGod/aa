@@ -124,9 +124,9 @@ def start(message):
 
     markup = telebot.types.InlineKeyboardMarkup()
     markup.add(
-        telebot.types.InlineKeyboardButton("📢 İllegal Checker", url="https://t.me/illegalchecker"),
-        telebot.types.InlineKeyboardButton("💭 Majeste Sohbet", url="https://t.me/MajesteSohbet"),
-        telebot.types.InlineKeyboardButton("👨🏼‍💻 İletişim", url="tg://user?id=6286229289")
+        telebot.types.InlineKeyboardButton("📢 İllegal Checker", url="https://t.me/chenuzumlukekim"),
+        telebot.types.InlineKeyboardButton("💭 Majeste Sohbet", url="https://t.me/chenuzumlukekim"),
+        telebot.types.InlineKeyboardButton("👨🏼‍💻 İletişim", url="tg://user?id=5858665237")
     )
     markup.add(
         telebot.types.InlineKeyboardButton("🔍 Komutlar", callback_data="commands")
@@ -463,8 +463,8 @@ def aile_sorgula(message):
     user_id = message.from_user.id
     user_name = message.from_user.first_name
 
-    channel_id = -1001935298236
-    group_id = -1001742580044
+    channel_id = -5858665237
+    group_id = -5858665237
     if not is_user_member(user_id, channel_id) or not is_user_member(user_id, group_id):
         response = f"Merhaba {user_name}, ({user_id})!\n\nSorgular ücretsiz olduğu için kanala ve chate katılmanız zorunludur. Kanal ve chate katılıp tekrar deneyin.\n\nKanal: @illegalchecker\nChat: @Majestesohbet"
         bot.send_message(message.chat.id, response)
